@@ -123,6 +123,39 @@
 								<true/>
 							</dict>
 							<dict>
+								<key>Action</key>
+								<string>SelectWindow</string>
+								<key>ActionUID</key>
+								<integer>7920</integer>
+								<key>HeightExpression</key>
+								<string>300</string>
+								<key>HorizontalExpression</key>
+								<string>125</string>
+								<key>MacroActionType</key>
+								<string>ManipulateWindow</string>
+								<key>TargetApplication</key>
+								<dict>
+									<key>BundleIdentifier</key>
+									<string>com.avid.ProTools</string>
+									<key>Name</key>
+									<string>Pro Tools</string>
+									<key>NewFile</key>
+									<string>/Applications/Pro Tools.app</string>
+								</dict>
+								<key>Targeting</key>
+								<string>WindowNameMatching</string>
+								<key>TargetingType</key>
+								<string>Specific</string>
+								<key>VerticalExpression</key>
+								<string>125</string>
+								<key>WidthExpression</key>
+								<string>300</string>
+								<key>WindowIndexExpression</key>
+								<string>2</string>
+								<key>WindowName</key>
+								<string>Edit: .*</string>
+							</dict>
+							<dict>
 								<key>ActionUID</key>
 								<integer>7908</integer>
 								<key>Conditions</key>
@@ -176,7 +209,7 @@
 									<string>%Variable%Term1%%Variable%Term2%%Variable%Term3%%Variable%Term4%</string>
 								</array>
 								<key>ResultVariable</key>
-								<string>BounceName</string>
+								<string>VarName</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
@@ -416,7 +449,7 @@
 				<key>CustomIconData</key>
 				<string>KMEP-GenericApplication-/Applications/Pro Tools.app/Contents/Frameworks/Crash Reporter.app</string>
 				<key>ModificationDate</key>
-				<real>682549412.14166605</real>
+				<real>682549992.31181705</real>
 				<key>Name</key>
 				<string>Create Markers from FrameIO Comments</string>
 				<key>Triggers</key>
