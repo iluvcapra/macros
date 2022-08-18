@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>682544687.86553097</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>7888</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Track</string>
+							<string>Scroll to Track...</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>7889</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+						<key>Text</key>
+						<string>%Variable%TargetTrackName%</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>7890</integer>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>682545722.61343503</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/Pro Tools.app/Contents/Frameworks/Crash Reporter.app</string>
+				<key>ModificationDate</key>
+				<real>682545836.23814702</real>
+				<key>Name</key>
+				<string>Scroll to Track</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>Subroutine</string>
+						<key>Parameters</key>
+						<array>
+							<string>TargetTrackName</string>
+						</array>
+						<key>ReturnsValue</key>
+						<false/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>509650D7-ADBB-455B-ACAF-50A351E6E0C3</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Pro Tools: Automations</string>
+		<key>ToggleMacroUID</key>
+		<string>9D8A31F4-0155-4856-8E31-706099317279</string>
+		<key>UID</key>
+		<string>5D9488F9-A848-472F-866F-70930CE3D6CE</string>
+	</dict>
+</array>
+</plist>

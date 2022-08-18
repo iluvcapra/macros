@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>682544687.86553097</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>5565</integer>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>65</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>65536</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>6715</integer>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteSubroutine</string>
+						<key>MacroUID</key>
+						<string>85364BAA-C32E-4BB1-B576-95A1948C2D62</string>
+						<key>Parameters</key>
+						<array>
+							<string>%LocationNumber%</string>
+						</array>
+						<key>ResultVariable</key>
+						<string>VarName</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>5566</integer>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>65</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>65536</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>682213127.12861204</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/Pro Tools.app/Contents/Frameworks/Crash Reporter.app</string>
+				<key>ModificationDate</key>
+				<real>682545842.97353804</real>
+				<key>Name</key>
+				<string>Recall Memory Location</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>Subroutine</string>
+						<key>Parameters</key>
+						<array>
+							<string>LocationNumber</string>
+						</array>
+						<key>ReturnsValue</key>
+						<false/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>B67B7034-E796-4C07-AC10-7B4371909F06</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Pro Tools: Automations</string>
+		<key>ToggleMacroUID</key>
+		<string>9D8A31F4-0155-4856-8E31-706099317279</string>
+		<key>UID</key>
+		<string>5D9488F9-A848-472F-866F-70930CE3D6CE</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>682544687.86553097</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>2759</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Copy Special</string>
+							<string>All Automation</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>2760</integer>
+						<key>KeyCode</key>
+						<integer>41</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>2761</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Paste Special</string>
+							<string>Repeat to Fill Selection</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>659313717.17562497</real>
+				<key>ModificationDate</key>
+				<real>659313797.89805603</real>
+				<key>Name</key>
+				<string>Copy All Auto Down</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>ElementCookie</key>
+						<integer>4</integer>
+						<key>ElementDeviceUsage</key>
+						<integer>0</integer>
+						<key>ElementDeviceUsagePage</key>
+						<integer>0</integer>
+						<key>ElementName</key>
+						<string>Stream Deck R4C4</string>
+						<key>ElementProductID</key>
+						<integer>0</integer>
+						<key>ElementShortName</key>
+						<string>R4C4</string>
+						<key>ElementStreamDeck</key>
+						<true/>
+						<key>ElementUsage</key>
+						<integer>4</integer>
+						<key>ElementUsagePage</key>
+						<integer>0</integer>
+						<key>ElementValue</key>
+						<integer>1</integer>
+						<key>ElementVendorID</key>
+						<integer>0</integer>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>MacroTriggerType</key>
+						<string>HID</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>UseModifiers</key>
+						<true/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>2C26CE5F-5791-490A-B173-6897441338D6</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Pro Tools: Automations</string>
+		<key>ToggleMacroUID</key>
+		<string>9D8A31F4-0155-4856-8E31-706099317279</string>
+		<key>UID</key>
+		<string>5D9488F9-A848-472F-866F-70930CE3D6CE</string>
+	</dict>
+</array>
+</plist>
