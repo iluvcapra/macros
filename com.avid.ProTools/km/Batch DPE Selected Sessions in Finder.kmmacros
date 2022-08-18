@@ -14,6 +14,60 @@
 				<array>
 					<dict>
 						<key>ActionUID</key>
+						<integer>8690</integer>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4JAwAAKwAAAAEA
+						AAABAwAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYyNjM5
+						Clxjb2NvYXRleHRzY2FsaW5nMFxj
+						b2NvYXBsYXRmb3JtMHtcZm9udHRi
+						bFxmMFxmc3dpc3NcZmNoYXJzZXQw
+						IEhlbHZldGljYTt9CntcY29sb3J0
+						Ymw7XHJlZDI1NVxncmVlbjI1NVxi
+						bHVlMjU1O1xyZWQwXGdyZWVuMFxi
+						bHVlMDt9CntcKlxleHBhbmRlZGNv
+						bG9ydGJsOztcY3NzcmdiXGMwXGMw
+						XGMwXGM4NDcwNlxjbmFtZSBjb250
+						cm9sVGV4dENvbG9yO30KXHBhcmRc
+						dHg1NjBcdHgxMTIwXHR4MTY4MFx0
+						eDIyNDBcdHgyODAwXHR4MzM2MFx0
+						eDM5MjBcdHg0NDgwXHR4NTA0MFx0
+						eDU2MDBcdHg2MTYwXHR4NjcyMFxw
+						YXJkaXJuYXR1cmFsXHBhcnRpZ2h0
+						ZW5mYWN0b3IwCgpcZjBcZnMyNiBc
+						Y2YyIFNlbGVjdCBzZXNzaW9uIGZv
+						bGRlcnMgaW4gdGhlIEZpbmRlciwg
+						ZWFjaCBzZXNzaW9uIHdpbGwgYmUg
+						b3BlbmVkIGluIHR1cm4gYW5kIGV2
+						ZXJ5IGhpZ2hsaWdodGVkIHRyYWNr
+						IHdpbGwgYmUgRFBFZCwgc2F2ZWQg
+						YW5kIHF1aXQuXApcClBybyBUb29s
+						cyBzaG91bGQgYWxyZWFkeSBiZSBv
+						cGVuIGJlZm9yZSB5b3UgcnVuIHRo
+						aXMuIFRoZSBzZXNzaW9ucyBzaG91
+						bGQgYWxyZWFkeSBiZSBpbiBEZXN0
+						cnVjdGl2ZSBQdW5jaCBtb2RlLCBh
+						bmQgeW91IHNob3VsZCBoYXZlIHlv
+						dXIgRFBFIHNlc3Npb24gbGVuZ3Ro
+						IHNlbGVjdGVkLiBCZWZvcmUgcnVu
+						bmluZyBvbiBhIHNlc3Npb24sIG1h
+						a2Ugc3VyZSB0aGF0IHRoZSB0cmFj
+						a3MgeW91IHdhbnQgdG8gcHJlcCBo
+						YXZlIGJlZW4gc2VsZWN0ZWQufQEA
+						AAAjAAAAAQAAAAcAAABUWFQucnRm
+						EAAAAD7K/mK2AQAAAAAAAAAAAAA=
+						</data>
+						<key>Title</key>
+						<string>How to use</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
 						<integer>8294</integer>
 						<key>Actions</key>
 						<array>
@@ -343,7 +397,7 @@
 				<key>CustomIconData</key>
 				<string>KMEP-GenericApplication-/Applications/Pro Tools.app/Contents/Frameworks/Crash Reporter.app</string>
 				<key>ModificationDate</key>
-				<real>682554463.84558105</real>
+				<real>682557889.21690202</real>
 				<key>Name</key>
 				<string>Batch DPE Selected Sessions in Finder</string>
 				<key>Triggers</key>
