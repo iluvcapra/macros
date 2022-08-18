@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>658477582.99055803</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>918</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Options</string>
+							<string>Automation Follows Edit</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.avid.ProTools</string>
+							<key>Name</key>
+							<string>Pro Tools</string>
+							<key>NewFile</key>
+							<string>/Applications/Pro Tools.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>919</integer>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9DDFA2FB-BB26-40F9-8B09-E8D64BE5B0DC</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>658537487.00247705</real>
+				<key>ModificationDate</key>
+				<real>659313501.08630097</real>
+				<key>Name</key>
+				<string>AFE Inhibit</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>ElementCookie</key>
+						<integer>4</integer>
+						<key>ElementDeviceUsage</key>
+						<integer>0</integer>
+						<key>ElementDeviceUsagePage</key>
+						<integer>0</integer>
+						<key>ElementName</key>
+						<string>Stream Deck R1C4</string>
+						<key>ElementProductID</key>
+						<integer>0</integer>
+						<key>ElementShortName</key>
+						<string>R1C4</string>
+						<key>ElementStreamDeck</key>
+						<true/>
+						<key>ElementUsage</key>
+						<integer>1</integer>
+						<key>ElementUsagePage</key>
+						<integer>0</integer>
+						<key>ElementValue</key>
+						<integer>1</integer>
+						<key>ElementVendorID</key>
+						<integer>0</integer>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>MacroTriggerType</key>
+						<string>HID</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>UseModifiers</key>
+						<true/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>77C1A9B2-34FD-4E20-98CD-4A7796C15626</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Pro Tools</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.avid.ProTools</string>
+					<key>Name</key>
+					<string>Pro Tools</string>
+					<key>NewFile</key>
+					<string>/Applications/Pro Tools.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>FDE7AA19-6B21-4FDF-9D37-2A6E778FB8EB</string>
+		<key>UID</key>
+		<string>F7F5A31F-1FC3-482C-A933-3E3E6E6C51B0</string>
+	</dict>
+</array>
+</plist>
