@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   x="0"
+   y="0"
+   width="12.25"
+   height="12.25"
+   viewBox="0 0 12.25 12.25"
+   id="svg385"
+   sodipodi:docname="transport_icons.svg.2022_08_18_11_32_28.0.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs389" />
+  <sodipodi:namedview
+     id="namedview387"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="0.85644533"
+     inkscape:cx="218.92816"
+     inkscape:cy="489.81527"
+     inkscape:window-width="1706"
+     inkscape:window-height="1027"
+     inkscape:window-x="45"
+     inkscape:window-y="57"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid445"
+       units="in"
+       spacingx="12"
+       spacingy="12" />
+  </sodipodi:namedview>
+  <g
+     id="Layer_1"
+     transform="translate(-576,-72)">
+    <g
+       id="g1039"
+       inkscape:label="dot">
+      <path
+         d="M 582.125,84.25 C 578.742,84.25 576,81.508 576,78.125 576,74.742 578.742,72 582.125,72 c 3.383,0 6.125,2.742 6.125,6.125 0,3.383 -2.742,6.125 -6.125,6.125 z"
+         fill="#000000"
+         id="path130"
+         inkscape:label="path130" />
+    </g>
+  </g>
+</svg>
