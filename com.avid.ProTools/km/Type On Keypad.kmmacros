@@ -57,23 +57,6 @@
 										<string>1</string>
 									</dict>
 									<dict>
-										<key>Actions</key>
-										<array>
-											<dict>
-												<key>ActionUID</key>
-												<integer>7489</integer>
-												<key>MacroActionType</key>
-												<string>Log</string>
-												<key>Text</key>
-												<string>Untypeable keypad digit "%Variable%Digit%"</string>
-											</dict>
-										</array>
-										<key>ConditionType</key>
-										<string>Otherwise</string>
-										<key>TestValue</key>
-										<string></string>
-									</dict>
-									<dict>
 										<key>ActionListDisclosed</key>
 										<false/>
 										<key>Actions</key>
@@ -554,7 +537,7 @@
 				<key>CreationDate</key>
 				<real>682372286.05983198</real>
 				<key>ModificationDate</key>
-				<real>682402505.85710502</real>
+				<real>682547951.65443504</real>
 				<key>Name</key>
 				<string>Type On Keypad</string>
 				<key>Triggers</key>
