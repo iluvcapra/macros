@@ -156,7 +156,7 @@
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
-						<string>%SystemClipboard%_%ICUDateTime%MMd_hmm%</string>
+						<string>%SystemClipboard%_%ICUDateTime%MMd_kmm%</string>
 						<key>Variable</key>
 						<string>BounceName</string>
 					</dict>
@@ -227,11 +227,22 @@
 				<key>CreationDate</key>
 				<real>682543756.47201097</real>
 				<key>ModificationDate</key>
-				<real>682545213.32295203</real>
+				<real>682546209.46570897</real>
 				<key>Name</key>
 				<string>Bounce Region</string>
 				<key>Triggers</key>
-				<array/>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>107</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
 				<key>UID</key>
 				<string>E4CF0A19-BBF9-4DF5-B764-865F525C6B8E</string>
 			</dict>
