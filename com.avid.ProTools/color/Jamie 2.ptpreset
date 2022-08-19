@@ -1,0 +1,50 @@
+{
+    "MajorVersion": "1",
+    "MinorVersion": "0",
+    "UITheme": "Dark",
+    "General": {
+        "Foreground Color": "Default",
+        "Brightness": "56",
+        "Text Saturation": "100",
+        "Background Color": "Default",
+        "Background Brightness": "43",
+        "Background Saturation": "100",
+        "Toolbar Brightness": "40",
+        "High Contrast UI": "0"
+    },
+    "Tracks": {
+        "Track Header Brightness": "19",
+        "Track Header Saturation": "24",
+        "Folder Track Header Brightness": "30",
+        "Edit Selection": "50",
+        "Timeline Brightness": "50",
+        "Inactive Track Brightness": "50",
+        "Inactive Track Saturation": "50"
+    },
+    "Clips": {
+        "Waveform Brightness": "50",
+        "Clip Background": "50"
+    },
+    "Grids": {
+        "Brightness (Grid Mode)": "55",
+        "Brightness (Non-Grid Mode)": "55"
+    },
+    "Marker Lines": {
+        "Marker Color": "Purple",
+        "Brightness": "50"
+    },
+    "Automation View": {
+        "Waveform Brightness": "46",
+        "Waveform Saturation": "56",
+        "Line Brightness": "50",
+        "Line Saturation": "50",
+        "Background Brightness": "50"
+    },
+    "Analysis Warp View": {
+        "Waveform Brightness": "44",
+        "Waveform Saturation": "59",
+        "Analysis Marker Brightness": "50",
+        "Analysis Marker Saturation": "50",
+        "Background Brightness": "50"
+    }
+}

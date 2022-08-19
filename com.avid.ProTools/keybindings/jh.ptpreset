@@ -1,0 +1,15 @@
+{
+    "Version": {
+        "Major": "1",
+        "Minor": "0"
+    },
+    "Bindings": [
+        {
+            "Command": "EZoom",
+            "Original Key": "E",
+            "Original Modifiers": "<Focus>",
+            "New Key": "Invalid",
+            "New Modifiers": ""
+        }
+    ]
+}
