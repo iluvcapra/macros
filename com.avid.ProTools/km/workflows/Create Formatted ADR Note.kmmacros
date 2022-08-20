@@ -13,6 +13,49 @@
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>ActionColor</key>
+						<string>Red</string>
+						<key>ActionUID</key>
+						<integer>9476</integer>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4WAgAAKwAAAAEA
+						AAAOAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYyNjM5
+						Clxjb2NvYXRleHRzY2FsaW5nMFxj
+						b2NvYXBsYXRmb3JtMHtcZm9udHRi
+						bFxmMFxmc3dpc3NcZmNoYXJzZXQw
+						IEhlbHZldGljYTt9CntcY29sb3J0
+						Ymw7XHJlZDI1NVxncmVlbjI1NVxi
+						bHVlMjU1O1xyZWQwXGdyZWVuMFxi
+						bHVlMDt9CntcKlxleHBhbmRlZGNv
+						bG9ydGJsOztcY3NzcmdiXGMwXGMw
+						XGMwXGM4NDcwNlxjbmFtZSBjb250
+						cm9sVGV4dENvbG9yO30KXHBhcmRc
+						dHg1NjBcdHgxMTIwXHR4MTY4MFx0
+						eDIyNDBcdHgyODAwXHR4MzM2MFx0
+						eDM5MjBcdHg0NDgwXHR4NTA0MFx0
+						eDU2MDBcdHg2MTYwXHR4NjcyMFxw
+						YXJkaXJuYXR1cmFsXHBhcnRpZ2h0
+						ZW5mYWN0b3IwCgpcZjBcZnMyNiBc
+						Y2YyIFRoaXMgY3JlYXRlcyBhbiBB
+						RFIgc3BvdHRpbmcgcmVnaW9uIGZv
+						cm1hdHRlZCBmb3IgbXkgQURSIHJl
+						cG9ydCBnZW5lcmF0b3IsIHB0dWxz
+						Y29udi4gRm9yIG1vcmUgaW5mb3Jt
+						YXRpb24gc2VlIGh0dHBzOi8vZ2l0
+						aHViLmNvbS9pbHV2Y2FwcmEvcHR1
+						bHNjb252fQEAAAAjAAAAAQAAAAcA
+						AABUWFQucnRmEAAAAG34/mK2AQAA
+						AAAAAAAAAAA=
+						</data>
+						<key>Title</key>
+						<string>Info</string>
+					</dict>
+					<dict>
 						<key>ActionUID</key>
 						<integer>7089</integer>
 						<key>Buttons</key>
@@ -138,6 +181,8 @@
 					<dict>
 						<key>ActionUID</key>
 						<integer>7090</integer>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>KeyCode</key>
 						<integer>5</integer>
 						<key>MacroActionType</key>
@@ -161,6 +206,8 @@
 					<dict>
 						<key>ActionUID</key>
 						<integer>7092</integer>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>KeyCode</key>
 						<integer>15</integer>
 						<key>MacroActionType</key>
@@ -186,6 +233,8 @@
 						<string>ByTyping</string>
 						<key>ActionUID</key>
 						<integer>7093</integer>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>MacroActionType</key>
 						<string>InsertText</string>
 						<key>TargetApplication</key>
@@ -649,6 +698,8 @@
 					<dict>
 						<key>ActionUID</key>
 						<integer>7094</integer>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>KeyCode</key>
 						<integer>36</integer>
 						<key>MacroActionType</key>
@@ -672,8 +723,10 @@
 				</array>
 				<key>CreationDate</key>
 				<real>682391550.10855997</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/Pro Tools.app/Contents/Frameworks/Crash Reporter.app</string>
 				<key>ModificationDate</key>
-				<real>682466311.95457006</real>
+				<real>682569708.85198998</real>
 				<key>Name</key>
 				<string>Create Formatted ADR Note</string>
 				<key>Triggers</key>
@@ -695,6 +748,22 @@
 		</array>
 		<key>Name</key>
 		<string>Pro Tools: Automations</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.avid.ProTools</string>
+					<key>Name</key>
+					<string>Pro Tools</string>
+					<key>NewFile</key>
+					<string>/Applications/Pro Tools.app</string>
+				</dict>
+			</array>
+		</dict>
 		<key>ToggleMacroUID</key>
 		<string>9D8A31F4-0155-4856-8E31-706099317279</string>
 		<key>UID</key>

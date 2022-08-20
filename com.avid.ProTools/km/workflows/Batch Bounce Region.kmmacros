@@ -7,12 +7,27 @@
 		<string>Normal</string>
 		<key>CreationDate</key>
 		<real>682544687.86553097</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Pro Tools.app</string>
+		<key>DisplayInMenuBar</key>
+		<dict>
+			<key>Display</key>
+			<true/>
+			<key>IconType</key>
+			<string>MacroGroup</string>
+			<key>IncludeAllMacros</key>
+			<false/>
+			<key>TitleType</key>
+			<string>MacroGroup</string>
+		</dict>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>ActionColor</key>
+						<string>Red</string>
 						<key>ActionUID</key>
 						<integer>7881</integer>
 						<key>MacroActionType</key>
@@ -20,8 +35,8 @@
 						<key>StyledText</key>
 						<data>
 						cnRmZAAAAAADAAAAAgAAAAcAAABU
-						WFQucnRmAQAAAC4UAwAAKwAAAAEA
-						AAAMAwAAe1xydGYxXGFuc2lcYW5z
+						WFQucnRmAQAAAC7QAwAAKwAAAAEA
+						AADIAwAAe1xydGYxXGFuc2lcYW5z
 						aWNwZzEyNTJcY29jb2FydGYyNjM5
 						Clxjb2NvYXRleHRzY2FsaW5nMFxj
 						b2NvYXBsYXRmb3JtMHtcZm9udHRi
@@ -44,35 +59,48 @@
 						dW4gdGhpcyBzY3JpcHQsIGl0IHdp
 						bGwgZ3JhYiB0aGUgbmFtZSBvZiB0
 						aGUgY2xpcCwgYmVnaW4gYSBuZXcg
-						Ym91bmNlIGFuZCBwYXN0ZSB0aGUg
-						bmFtZSBvZiB0aGUgY2xpcCBhcyB0
-						aGUgYm91bmNlXCc5MnMgYmFzZSBu
-						YW1lIChhZGRpbmcgYSBkYXRlIGF0
-						IHRoZSBlbmQpLlwKXApBZGRpbmcg
-						YSBzbGFzaCBcJzkzL1wnOTMgYW5k
-						IG51bWJlcnMgdG8gdGhlIGVuZCB3
-						aWxsIGRvIG11bHRpcGxlIGJvdW5j
-						ZXMsIGxvYWRpbmcgdGhlIHByZXNl
-						dCBudW1iZXJlZC4gQSBjbGlwIG5h
-						bWVkIFwnOTNCb3VuY2UvMTI0XCc5
-						NCB3aWxsIGNyZWF0ZSB0aHJlZSBi
-						b3VuY2VzLCBvbmUgZm9yIHByZXNl
-						dCAxLCBvbmUgZm9yIDIgYW5kIG9u
-						ZSBmb3IgNC59AQAAACMAAAABAAAA
-						BwAAAFRYVC5ydGYQAAAA39b+YrYB
-						AAAAAAAAAAAAAA==
+						Ym91bmNlIGFuZCB1c2UgdGhlIG5h
+						bWUgb2YgdGhlIGNsaXAgYXMgdGhl
+						IGJvdW5jZVwnOTJzIGJhc2UgbmFt
+						ZS5cClwKQWRkaW5nIGEgcGVyY2Vu
+						dCBcJzkzJVwnOTMgYW5kIG51bWJl
+						cnMgdG8gdGhlIGVuZCB3aWxsIGRv
+						IG11bHRpcGxlIGJvdW5jZXMsIGxv
+						YWRpbmcgdGhlIHByZXNldCBudW1i
+						ZXJlZC4gQSBjbGlwIG5hbWVkIFwn
+						OTNCb3VuY2UlMTI0XCc5NCB3aWxs
+						IGNyZWF0ZSB0aHJlZSBib3VuY2Vz
+						IHdpdGggdGhlIGJhc2VuYW1lIFwn
+						OTNCb3VuY2VcJzk0LCBvbmUgZm9y
+						IHByZXNldCAxLCBvbmUgZm9yIDIg
+						YW5kIG9uZSBmb3IgNC5cClwKQWRk
+						aW5nIGEgXCc5M2RcJzk0IGFmdGVy
+						IHRoZSBwZXJjZW50IHdpbGwgYXBw
+						ZW5kIGEgZm91ci1kaWdpdCBkYXRl
+						IGFuZCBmb3VyLWRpZ2l0IHRpbWUg
+						dG8gdGhlIGVuZCBvZiB0aGUgYm91
+						bmNlIGJhc2VuYW1lLlwKXApJZiBu
+						byBwcmVzZXRzIGFyZSBzcGVjaWZp
+						ZWQsIHByZXNldCAxIGlzIHRoZSBk
+						ZWZhdWx0Ln0BAAAAIwAAAAEAAAAH
+						AAAAVFhULnJ0ZhAAAADlcwFjtgEA
+						AAAAAAAAAAAA
 						</data>
 						<key>Title</key>
 						<string>Info</string>
 					</dict>
 					<dict>
+						<key>Action</key>
+						<string>SelectWindow</string>
 						<key>ActionUID</key>
-						<integer>7872</integer>
-						<key>AllWindows</key>
-						<true/>
-						<key>AlreadyActivatedActionType</key>
-						<string>Normal</string>
-						<key>Application</key>
+						<integer>9094</integer>
+						<key>HeightExpression</key>
+						<string>300</string>
+						<key>HorizontalExpression</key>
+						<string>125</string>
+						<key>MacroActionType</key>
+						<string>ManipulateWindow</string>
+						<key>TargetApplication</key>
 						<dict>
 							<key>BundleIdentifier</key>
 							<string>com.avid.ProTools</string>
@@ -81,12 +109,18 @@
 							<key>NewFile</key>
 							<string>/Applications/Pro Tools.app</string>
 						</dict>
-						<key>MacroActionType</key>
-						<string>ActivateApplication</string>
-						<key>ReopenWindows</key>
-						<false/>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
+						<key>Targeting</key>
+						<string>WindowNameMatching</string>
+						<key>TargetingType</key>
+						<string>Specific</string>
+						<key>VerticalExpression</key>
+						<string>125</string>
+						<key>WidthExpression</key>
+						<string>300</string>
+						<key>WindowIndexExpression</key>
+						<string>2</string>
+						<key>WindowName</key>
+						<string>Edit: .*</string>
 					</dict>
 					<dict>
 						<key>ActionUID</key>
@@ -135,6 +169,8 @@
 					<dict>
 						<key>Action</key>
 						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Parse Clip Name in Clipboard</string>
 						<key>ActionUID</key>
 						<integer>8693</integer>
 						<key>Captures</key>
@@ -143,24 +179,110 @@
 							<string>BounceName</string>
 							<string>Presets</string>
 						</array>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>MacroActionType</key>
 						<string>SearchRegEx</string>
 						<key>Search</key>
-						<string>([^/]+)/?(\d+)?</string>
+						<string>([^%]+)%%?(.+)?</string>
 						<key>Source</key>
 						<string>Clipboard</string>
 					</dict>
 					<dict>
+						<key>ActionName</key>
+						<string>Append Date if "d" in Presets</string>
 						<key>ActionUID</key>
-						<integer>7866</integer>
+						<integer>9890</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>Presets</string>
+									<key>VariableConditionType</key>
+									<string>Contains</string>
+									<key>VariableValue</key>
+									<string>d</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>MacroActionType</key>
-						<string>SetVariableToText</string>
-						<key>Text</key>
-						<string>%Variable%BounceName%_%ICUDateTime%MMd_kmm%</string>
-						<key>Variable</key>
-						<string>BounceName</string>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>7866</integer>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Variable%BounceName%_%ICUDateTime%MMd_kmm%</string>
+								<key>Variable</key>
+								<string>BounceName</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
 					</dict>
 					<dict>
+						<key>ActionName</key>
+						<string>Set Presets to "1" if Empty</string>
+						<key>ActionUID</key>
+						<integer>9888</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>Presets</string>
+									<key>VariableConditionType</key>
+									<string>IsEmpty</string>
+									<key>VariableValue</key>
+									<string>value</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>9889</integer>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1</string>
+								<key>Variable</key>
+								<string>Presets</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Do Bounces</string>
 						<key>ActionUID</key>
 						<integer>8694</integer>
 						<key>Actions</key>
@@ -247,8 +369,6 @@
 									<key>ConditionListMatch</key>
 									<string>All</string>
 								</dict>
-								<key>IsDisclosed</key>
-								<false/>
 								<key>MacroActionType</key>
 								<string>PauseUntil</string>
 								<key>TimeOutAbortsMacro</key>
@@ -445,7 +565,7 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>3</string>
+								<string>1</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
@@ -486,6 +606,8 @@
 								</dict>
 							</array>
 						</dict>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>MacroActionType</key>
 						<string>For</string>
 						<key>TimeOutAbortsMacro</key>
@@ -499,20 +621,22 @@
 				<key>CustomIconData</key>
 				<string>KMEP-GenericApplication-/Applications/Pro Tools.app/Contents/Frameworks/Crash Reporter.app</string>
 				<key>ModificationDate</key>
-				<real>682561118.21517503</real>
+				<real>682732544.17870903</real>
 				<key>Name</key>
 				<string>Batch Bounce Region</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>107</integer>
 						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
+						<string>StatusMenu</string>
+					</dict>
+					<dict>
+						<key>AutoRun</key>
+						<false/>
+						<key>Display</key>
+						<string></string>
+						<key>MacroTriggerType</key>
+						<string>GroupStatusMenu</string>
 					</dict>
 				</array>
 				<key>UID</key>
