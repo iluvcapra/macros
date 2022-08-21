@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>682755206.26165998</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>10688</integer>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>#!/bin/bash
+
+/usr/local/bin/ffprobe "$KMVAR_FilePath" -show_streams:v:0 -of json</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>Result</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>10689</integer>
+						<key>MacroActionType</key>
+						<string>Return</string>
+						<key>Text</key>
+						<string>%Variable%Result%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>682755050.64379096</real>
+				<key>ModificationDate</key>
+				<real>682755934.45381105</real>
+				<key>Name</key>
+				<string>ffmpeg — Probe Subroutine</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>Subroutine</string>
+						<key>Parameters</key>
+						<array>
+							<string>FilePath</string>
+						</array>
+						<key>ReturnsValue</key>
+						<true/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>B5CD761F-66EE-46EE-B178-976FCD5235CB</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Tricks Support</string>
+		<key>ToggleMacroUID</key>
+		<string>21A0934B-2BBF-4C02-85A5-E7183B3B1364</string>
+		<key>UID</key>
+		<string>2D4FE39D-8A34-4E22-83B6-AC39FA20D2C5</string>
+	</dict>
+</array>
+</plist>
