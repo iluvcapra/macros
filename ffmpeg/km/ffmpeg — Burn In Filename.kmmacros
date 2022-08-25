@@ -169,7 +169,7 @@
 								<key>Text</key>
 								<string>#!/bin/bash
 
-/usr/local/bin/ffmpeg -hide_banner -y -i "$KMVAR_File" -vf "$KMVAR_DrawFilter" "$KMVAR_OutputFile"</string>
+/usr/local/bin/ffmpeg -hide_banner -y -i "$KMVAR_File" -vf "$KMVAR_DrawFilter" -pix_fmt yuv420p -acodec copy "$KMVAR_OutputFile"</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 								<key>TrimResults</key>
@@ -201,7 +201,7 @@
 				<key>CreationDate</key>
 				<real>682759193.79493904</real>
 				<key>ModificationDate</key>
-				<real>682763490.490044</real>
+				<real>682977594.00033498</real>
 				<key>Name</key>
 				<string>ffmpeg — Burn In Filename</string>
 				<key>Triggers</key>
