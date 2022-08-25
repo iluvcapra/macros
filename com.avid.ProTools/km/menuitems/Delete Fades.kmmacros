@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>658477582.99055803</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Pro Tools.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>11487</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Menu</string>
+									<key>MenuConditionSelectionType</key>
+									<string>Path</string>
+									<key>MenuConditionType</key>
+									<string>IsEnabled</string>
+									<key>MenuModifiers</key>
+									<integer>256</integer>
+									<key>MenuShortcut</key>
+									<string>C</string>
+									<key>MenuTitle</key>
+									<string>Edit &gt; Fades &gt; Delete</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>11488</integer>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SystemAction</string>
+								<key>SystemAction</key>
+								<string>SystemBeep</string>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>7479</integer>
+								<key>MacroActionType</key>
+								<string>SelectMenuItem</string>
+								<key>Menu</key>
+								<array>
+									<string>Edit</string>
+									<string>Fades</string>
+									<string>Delete</string>
+								</array>
+								<key>TargetApplication</key>
+								<dict>
+									<key>BundleIdentifier</key>
+									<string>com.avid.ProTools</string>
+									<key>Name</key>
+									<string>Pro Tools</string>
+									<key>NewFile</key>
+									<string>/Applications/Pro Tools.app</string>
+								</dict>
+								<key>TargetingType</key>
+								<string>Specific</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>682392281.221241</real>
+				<key>ModificationDate</key>
+				<real>682905225.95821595</real>
+				<key>Name</key>
+				<string>Delete Fades</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>ElementCookie</key>
+						<integer>8</integer>
+						<key>ElementDeviceUsage</key>
+						<integer>2</integer>
+						<key>ElementDeviceUsagePage</key>
+						<integer>1</integer>
+						<key>ElementName</key>
+						<string>Kensington Expert Mouse Button 4</string>
+						<key>ElementProductID</key>
+						<integer>4128</integer>
+						<key>ElementShortName</key>
+						<string>B4</string>
+						<key>ElementUsage</key>
+						<integer>4</integer>
+						<key>ElementUsagePage</key>
+						<integer>9</integer>
+						<key>ElementValue</key>
+						<integer>1</integer>
+						<key>ElementVendorID</key>
+						<integer>1149</integer>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>MacroTriggerType</key>
+						<string>HID</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>UseModifiers</key>
+						<true/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>FFCEEC46-05AB-4807-BF04-732A57CE32A7</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Pro Tools</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.avid.ProTools</string>
+					<key>Name</key>
+					<string>Pro Tools</string>
+					<key>NewFile</key>
+					<string>/Applications/Pro Tools.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>FDE7AA19-6B21-4FDF-9D37-2A6E778FB8EB</string>
+		<key>UID</key>
+		<string>F7F5A31F-1FC3-482C-A933-3E3E6E6C51B0</string>
+	</dict>
+</array>
+</plist>
