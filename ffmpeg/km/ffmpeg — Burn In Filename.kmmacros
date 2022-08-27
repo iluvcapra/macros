@@ -99,7 +99,7 @@
 							</dict>
 							<dict>
 								<key>Default</key>
-								<string></string>
+								<string>%Variable%Watermark Text%</string>
 								<key>Type</key>
 								<string>Automatic</string>
 								<key>Variable</key>
@@ -355,7 +355,7 @@
 				<key>CreationDate</key>
 				<real>682759193.79493904</real>
 				<key>ModificationDate</key>
-				<real>683253437.78215396</real>
+				<real>683254235.22543001</real>
 				<key>Name</key>
 				<string>ffmpeg — Burn In Filename</string>
 				<key>Triggers</key>
