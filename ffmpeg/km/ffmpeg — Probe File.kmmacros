@@ -34,7 +34,7 @@
 								<key>ActionUID</key>
 								<integer>10659</integer>
 								<key>DisplayKind</key>
-								<string>Window</string>
+								<string>Variable</string>
 								<key>HonourFailureSettings</key>
 								<true/>
 								<key>IncludeStdErr</key>
@@ -48,12 +48,103 @@
 								<key>Text</key>
 								<string>#!/bin/bash
 
-/usr/local/bin/ffprobe "$KMVAR_File" -show_format -show_streams -of json</string>
+/usr/local/bin/ffprobe -hide_banner "$KMVAR_File" -show_format -show_streams -of json 2&gt;/dev/null</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 								<key>TrimResults</key>
 								<true/>
 								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+								<key>Variable</key>
+								<string>FFProbeData</string>
+							</dict>
+							<dict>
+								<key>ActionUID</key>
+								<integer>13000</integer>
+								<key>Floating</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>CustomPrompt</string>
+								<key>Text</key>
+								<string>&lt;html&gt;
+&lt;script type="text/javascript"&gt;
+
+function printSimpleKeyValue(key, value, parentNode) {
+
+	var keyValuePairNode = document.createElement("div");
+	keyValuePairNode.setAttribute("class","kv_pair");
+	var keyNode = document.createElement("div");
+	keyNode.setAttribute("class","simple_key");
+	var keyTextNode = document.createTextNode(key);
+	keyNode.appendChild(keyTextNode);
+	keyValuePairNode.appendChild(keyNode);
+
+	var valueNode = document.createElement("div");
+	valueNode.setAttribute("class","value");
+	var valueTextNode = document.createTextNode(value);
+	valueNode.appendChild(valueTextNode);
+	keyValuePairNode.appendChild(valueNode);
+
+	parentNode.appendChild(keyValuePairNode);
+}
+
+function printObject(obj, parentNode) {
+		var listElement = document.createElement("div");
+		listElement.setAttribute("class","list");
+		for (const key of Object.keys(obj)) {
+			var value = obj[key];
+			if (typeof(value) == "object") {
+				var keyNode = document.createElement("div");
+				keyNode.setAttribute("class","key");
+				var keyTextNode = document.createTextNode(key);
+				keyNode.appendChild(keyTextNode);
+				listElement.appendChild(keyNode);
+				printObject(value, listElement);
+			} else {
+				printSimpleKeyValue(key, value, listElement);
+			}
+			
+		}
+		parentNode.appendChild(listElement);
+}
+
+function KMDidShowWindow() {
+	var jsonData = window.KeyboardMaestro.GetVariable( "FFProbeData" );
+	var jsonObject = JSON.parse(jsonData);	
+	var contentNode = document.getElementById("content");
+	printObject(jsonObject, contentNode);
+}
+
+&lt;/script&gt;
+&lt;style&gt;
+body {width: 550px; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}
+
+div#content {padding-top:48px;}
+
+.list {margin-left: 10px;}
+.list:hover {}
+.simple_key {margin-left: 10px; display:inline; font-weight: bold;}
+.key { font-weight: bold;}
+.value {display:inline;}
+.simple_key:after {content: " = ";}
+.key:after {content: " =&gt; ";}
+.kv_pair { margin: 2px; }
+.kv_pair:hover {background-color: lightblue;}
+
+div.header {position: fixed; border: 1px solid black; display:block; width: 90%; background-color: white; padding:8px;}
+
+&lt;/style&gt;
+&lt;body data-kmwindow="SCREEN(Main,Left,20%),SCREEN(Main,Top,20%),600,560"&gt;
+&lt;div class="header"&gt;
+&lt;button name="OK" type="button" onclick="window.KeyboardMaestro.Submit('OK')"&gt;OK&lt;/button&gt;
+FFProbe File Metadata 
+&lt;/div&gt;
+&lt;div id="content"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+								<key>TimeOutAbortsMacro</key>
 								<true/>
 								<key>UseText</key>
 								<true/>
@@ -80,7 +171,7 @@
 				<key>CreationDate</key>
 				<real>682750637.82511103</real>
 				<key>ModificationDate</key>
-				<real>682752760.28110695</real>
+				<real>683251637.401932</real>
 				<key>Name</key>
 				<string>ffmpeg — Probe File</string>
 				<key>Triggers</key>
