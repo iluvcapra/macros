@@ -65,6 +65,58 @@
 					</dict>
 					<dict>
 						<key>ActionUID</key>
+						<integer>13001</integer>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string></string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>Burn In Movies</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string>1|0</string>
+								<key>Type</key>
+								<string>Automatic</string>
+								<key>Variable</key>
+								<string>Burn Filename</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Type</key>
+								<string>Automatic</string>
+								<key>Variable</key>
+								<string>Watermark Text</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string>copy|aac</string>
+								<key>Type</key>
+								<string>Automatic</string>
+								<key>Variable</key>
+								<string>Audio Codec</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
 						<integer>10702</integer>
 						<key>Actions</key>
 						<array>
@@ -143,13 +195,115 @@
 							</dict>
 							<dict>
 								<key>ActionUID</key>
-								<integer>10714</integer>
+								<integer>13002</integer>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>Burn Filename</string>
+											<key>VariableConditionType</key>
+											<string>Is</string>
+											<key>VariableValue</key>
+											<string>1</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>13003</integer>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>null</string>
+										<key>Variable</key>
+										<string>DrawFilter</string>
+									</dict>
+								</array>
 								<key>MacroActionType</key>
-								<string>SetVariableToText</string>
-								<key>Text</key>
-								<string>drawtext=fontsize=(h/32):fontcolor=white:text='%Variable%BaseName%':x=(w/90):y=(h-(h/24)): box=1: boxcolor=black:boxborderw=4</string>
-								<key>Variable</key>
-								<string>DrawFilter</string>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>10714</integer>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>drawtext=fontsize=(h/32):fontcolor=white:text='%Variable%BaseName%':x=(w/90):y=(h-(h/24)): box=1: boxcolor=black:boxborderw=4</string>
+										<key>Variable</key>
+										<string>DrawFilter</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionUID</key>
+								<integer>13004</integer>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>Watermark Text</string>
+											<key>VariableConditionType</key>
+											<string>IsNotEmpty</string>
+											<key>VariableValue</key>
+											<string>1</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>13006</integer>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>,null</string>
+										<key>Variable</key>
+										<string>DrawFilter</string>
+										<key>Where</key>
+										<string>Append</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>13005</integer>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>,drawtext=fontsize=(h/8):fontcolor=white:text='%Variable%Watermark Text%':alpha=0.3:x=(w/2 - text_w/2):y=(h/2 - text_h/2)</string>
+										<key>Variable</key>
+										<string>DrawFilter</string>
+										<key>Where</key>
+										<string>Append</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>ActionUID</key>
@@ -169,7 +323,7 @@
 								<key>Text</key>
 								<string>#!/bin/bash
 
-/usr/local/bin/ffmpeg -hide_banner -y -i "$KMVAR_File" -vf "$KMVAR_DrawFilter" -pix_fmt yuv420p -acodec copy "$KMVAR_OutputFile"</string>
+/usr/local/bin/ffmpeg -hide_banner -y -i "$KMVAR_File" -vf "$KMVAR_DrawFilter" -vcodec h264 -pix_fmt yuv420p -acodec $KMVAR_Audio_Codec "$KMVAR_OutputFile"</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 								<key>TrimResults</key>
@@ -201,7 +355,7 @@
 				<key>CreationDate</key>
 				<real>682759193.79493904</real>
 				<key>ModificationDate</key>
-				<real>682977594.00033498</real>
+				<real>683253437.78215396</real>
 				<key>Name</key>
 				<string>ffmpeg — Burn In Filename</string>
 				<key>Triggers</key>
