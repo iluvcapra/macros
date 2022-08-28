@@ -48,7 +48,7 @@
 								<key>Text</key>
 								<string>#!/bin/bash
 
-/usr/local/bin/ffprobe -hide_banner "$KMVAR_File" -show_format -show_streams -of json 2&gt;/dev/null</string>
+/usr/local/bin/ffprobe -hide_banner "$KMVAR_File" -show_format -show_streams -show_programs -show_chapters -show_error -pretty -of json 2&gt;/dev/null</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 								<key>TrimResults</key>
@@ -91,57 +91,124 @@ function printSimpleKeyValue(key, value, parentNode) {
 }
 
 function printObject(obj, parentNode) {
-		var listElement = document.createElement("div");
-		listElement.setAttribute("class","list");
-		for (const key of Object.keys(obj)) {
-			var value = obj[key];
-			if (typeof(value) == "object") {
-				var keyNode = document.createElement("div");
-				keyNode.setAttribute("class","key");
-				var keyTextNode = document.createTextNode(key);
-				keyNode.appendChild(keyTextNode);
-				listElement.appendChild(keyNode);
-				printObject(value, listElement);
-			} else {
-				printSimpleKeyValue(key, value, listElement);
-			}
-			
+	var listElement = document.createElement("div");
+	listElement.setAttribute("class","list");
+	for (const key of Object.keys(obj)) {
+		var value = obj[key];
+		if (typeof(value) == "object") {
+			var keyNode = document.createElement("div");
+			keyNode.setAttribute("class","key");
+			var keyTextNode = document.createTextNode(key);
+			keyNode.appendChild(keyTextNode);
+			listElement.appendChild(keyNode);
+			printObject(value, listElement);
+		} else {
+			printSimpleKeyValue(key, value, listElement);
 		}
-		parentNode.appendChild(listElement);
+		
+	}
+	parentNode.appendChild(listElement);
+}
+
+function printError(error, contentNode) {
+	let errorNode = document.createElement("div");
+	errorNode.setAttribute("class", "error");
+
+	const errno = error["code"];
+	const message = error["string"];
+	var errorMessageNode = document.createTextNode(`Error ${errno}: ${message}`);
+
+	errorNode.appendChild(errorMessageNode);
+	contentNode.appendChild(errorNode);
 }
 
 function KMDidShowWindow() {
 	var jsonData = window.KeyboardMaestro.GetVariable( "FFProbeData" );
-	var jsonObject = JSON.parse(jsonData);	
+	var jsonObject = JSON.parse(jsonData);
+
 	var contentNode = document.getElementById("content");
-	printObject(jsonObject, contentNode);
+
+	if ( Object.keys(jsonObject).includes("error") ) {
+		printError(jsonObject["error"], contentNode);
+	} else {
+		printObject(jsonObject, contentNode);	
+	}
 }
 
 &lt;/script&gt;
 &lt;style&gt;
-body {width: 550px; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}
+body {
+	width: 550px; 
+	font-family: Gill Sans, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	color: -apple-system-label;
+	background-color: -apple-system-control-background;
+}
 
-div#content {padding-top:48px;}
+div#content {
+	border: 1px solid black;
+	background-color: -apple-system-secondary-background;
+}
 
-.list {margin-left: 10px;}
-.list:hover {}
-.simple_key {margin-left: 10px; display:inline; font-weight: bold;}
-.key { font-weight: bold;}
-.value {display:inline;}
-.simple_key:after {content: " = ";}
-.key:after {content: " =&gt; ";}
-.kv_pair { margin: 2px; }
-.kv_pair:hover {background-color: lightblue;}
+.error {
+	color:red; font-weight: bold;
+}
 
-div.header {position: fixed; border: 1px solid black; display:block; width: 90%; background-color: white; padding:8px;}
+.list {
+	margin-left: 10px;
+}
+
+.list:hover {
+}
+
+.simple_key {
+	margin-left: 10px;
+	display:inline;
+	font-weight: bold;
+}
+
+.key {
+	font-weight: bold;
+}
+
+.value {
+	display:inline;
+}
+
+.simple_key:after {
+	content: " = ";
+}
+
+.key:before {
+	content: " \002b07 ";
+}
+
+.kv_pair { 
+	margin: 2px;
+}
+
+.kv_pair:hover {
+	background-color: lightblue;
+}
+
+div.header {
+	text-align: right;
+	position: -webkit-sticky; 
+	position: sticky; 
+	bottom: 10px; 
+	border: 1px solid black; 
+	display:block; 
+	background-color: gray; 
+	padding:8px; 
+	margin-top: 16px;
+}
 
 &lt;/style&gt;
 &lt;body data-kmwindow="SCREEN(Main,Left,20%),SCREEN(Main,Top,20%),600,560"&gt;
-&lt;div class="header"&gt;
-&lt;button name="OK" type="button" onclick="window.KeyboardMaestro.Submit('OK')"&gt;OK&lt;/button&gt;
-FFProbe File Metadata 
-&lt;/div&gt;
 &lt;div id="content"&gt;&lt;/div&gt;
+&lt;div class="header"&gt;
+FFProbe File Metadata &lt;button name="OK" type="button" onclick="window.KeyboardMaestro.Submit('OK')"&gt;OK&lt;/button&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</string>
 								<key>TimeOutAbortsMacro</key>
@@ -171,7 +238,7 @@ FFProbe File Metadata
 				<key>CreationDate</key>
 				<real>682750637.82511103</real>
 				<key>ModificationDate</key>
-				<real>683251637.401932</real>
+				<real>683418679.558097</real>
 				<key>Name</key>
 				<string>ffmpeg — Probe File</string>
 				<key>Triggers</key>
